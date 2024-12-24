@@ -1,6 +1,6 @@
 {
   "name": "pk-editable-table-component",
-  "version": "0.0.7",
+  "version": "0.1.5",
   "description": "simple editable table",
   "license": "ISC",
   "author": "Pavel Kurek",
@@ -12,13 +12,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "rollup": "rollup -c --bundleConfigAsCjs"
   },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
   "devDependencies": {
     "@types/react": "^19.0.2",
-    "react": "^19.0.0",
+    "typescript": "^5.7.2",
     "tslib": "^2.8.1",
-    "typescript": "^5.7.2"
-  },
-  "dependencies": {
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.4",
