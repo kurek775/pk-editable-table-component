@@ -42,9 +42,9 @@ import "pk-editable-table-component/dist/index.css";
 
 const App = () => {
   const headers = [
-    { key: "id", type: "number", disabled: true },
-    { key: "name", type: "string", required: true },
-    { key: "age", type: "number", required: true },
+    { columnLabel: "Id", key: "id", type: "number", disabled: true },
+    { columnLabel: "Name", key: "name", type: "string", required: true },
+    { columnLabel: "Age", key: "age", type: "number", required: true },
   ];
 
   const initialData = [
@@ -98,6 +98,7 @@ export default App;
 
 ```ts
 type HeaderConfig = {
+  columnLabel: string; // Label for each column
   key: string; // Unique key for each column
   type: "string" | "number"; // Type of the data in the column
   disabled?: boolean; // Whether the column is editable
